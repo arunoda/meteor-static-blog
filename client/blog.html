@@ -1,0 +1,15 @@
+<template name="blog">
+  <div id='blog'>
+    <button onclick="Router.go('/')" class='btn btn-default btn-sm'>Back</button>
+    {{{content}}}
+  </div>
+</template>
+
+<template name="blogHome">
+  <h1> Arunoda's Static Meteor Blog </h1>
+  <div id='blogHome'>
+    {{#each posts}}
+      <div><a href='/blog/{{template}}'>{{title}}</a></div>
+    {{/each}}
+  </div>
+</template>

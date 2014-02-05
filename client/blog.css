@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900);
+
+body, div, a, li, ul {
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.2px;
+  color: #555;
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+#blogHome a {
+  font-size: 22px;
+}
