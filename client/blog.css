@@ -8,7 +8,15 @@ body, div, a, li, ul {
 
 h1 {
   font-weight: 900;
+  margin-bottom: 0px;
+}
+
+#navbar {
   margin-bottom: 30px;
+}
+
+#navbar a {
+  color: rgb(255, 58, 58);
 }
 
 h2, h3, h4 {

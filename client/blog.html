@@ -7,6 +7,9 @@
 
 <template name="blogHome">
   <h1> Arunoda's Static Meteor Blog </h1>
+  <div id='navbar'>
+    <a href="http://meteorhacks.com/building-static-websites-with-meteor.html">This blog is created with Meteor. Learn how I built this!</a>
+  </div>
   <div id='blogHome'>
     {{#each posts}}
       <div><a href='/blog/{{template}}'>{{title}}</a></div>
