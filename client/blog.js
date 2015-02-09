@@ -1,15 +1,14 @@
-if (Meteor.isClient) {
-  Template.blog.content = function() {
-    var slug = Router.current().params.slug;
-    var templateFunc = Template[slug];
-    if(typeof templateFunc == 'function') {
-      return templateFunc();
-    } else {
-      return "404";
+if(Meteor.isClient) {
+  Template.blog.helpers({
+    getTemplateName: function() {
+      var slug = Router.current().params.slug;
+      return slug;
     }
-  };
+  });
 
-  Template.blogHome.posts = function() {
-    return PostList;
-  };
+  Template.blogHome.helpers({
+    posts: function() {
+      return PostList;
+    }
+  });
 }

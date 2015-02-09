@@ -1,7 +1,7 @@
 <template name="blog">
   <div id='blog'>
     <button onclick="Router.go('/')" class='btn btn-default btn-sm'>Back</button>
-    {{{content}}}
+    {{>Template.dynamic template=getTemplateName}}
   </div>
 </template>
 

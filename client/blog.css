@@ -6,6 +6,10 @@ body, div, a, li, ul {
   color: #555;
 }
 
+body {
+  margin: 30px 30px;
+}
+
 h1 {
   font-weight: 900;
   margin-bottom: 0px;
